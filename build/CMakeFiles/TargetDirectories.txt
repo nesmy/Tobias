@@ -1,0 +1,3 @@
+/home/Nesmy/Playground/Tobias/build/CMakeFiles/TobiasAI.dir
+/home/Nesmy/Playground/Tobias/build/CMakeFiles/edit_cache.dir
+/home/Nesmy/Playground/Tobias/build/CMakeFiles/rebuild_cache.dir
