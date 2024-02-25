@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/Nesmy/Playground/Tobias/build",
-  "command": "/usr/bin/c++  -I/home/Nesmy/Playground/Tobias/include -std=gnu++14 -o CMakeFiles/TobiasAI.dir/src/main.cpp.o -c /home/Nesmy/Playground/Tobias/src/main.cpp",
-  "file": "/home/Nesmy/Playground/Tobias/src/main.cpp",
-  "output": "CMakeFiles/TobiasAI.dir/src/main.cpp.o"
-}
-]
