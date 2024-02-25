@@ -9,7 +9,7 @@ file(GLOB SOURCES src/*.cpp)
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 
-#add_subdirectory(vendor/SOIL)
+#add_subdirectory(vendor/festival)
 
 
 #add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD 
@@ -20,7 +20,9 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 
 target_include_directories(${PROJECT_NAME}
   PUBLIC include
+  PUBLIC vendor/espeak-ng/src/include
   )
 
 target_link_libraries(${PROJECT_NAME}
+  espeak-ng
   )
