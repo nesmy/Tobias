@@ -9,7 +9,7 @@ file(GLOB SOURCES src/*.cpp)
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 
-#add_subdirectory(vendor/festival)
+#add_subdirectory(vendor/pocketsphinx)
 
 
 #add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD 
@@ -21,8 +21,15 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 target_include_directories(${PROJECT_NAME}
   PUBLIC include
   PUBLIC vendor/espeak-ng/src/include
+  PUBLIC vendor/pocketsphinx/include
+  #PUBLIC vendor/TensorFlow/include
   )
+
+find_library(TensorFlow /vendor/TensorFlow/lib) 
 
 target_link_libraries(${PROJECT_NAME}
   espeak-ng
+  pocketsphinx
+  #${CMAKE_CURRENT_SOURCE_DIR}/vendor/TensorFlow/lib/libtensorflow.so.2.6.0
+  #TensorFlow
   )
