@@ -2,6 +2,10 @@ build/
 build
 test/
 test
+.cache
+.cache/
+.venv/
+.venv
 
 # Prerequisites
 *.d
